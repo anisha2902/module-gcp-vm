@@ -1,10 +1,3 @@
-terraform {
-  backend "gcs" {
-    bucket = "my-bucket-terraform-state"
-    prefix = "envs/dev"
-  }
-}
-
 resource "google_compute_instance" "vm-terraform" {
   name         = "terraform-instance"
   machine_type = var.machine_type
