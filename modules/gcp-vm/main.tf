@@ -7,7 +7,7 @@ terraform {
 
 resource "google_compute_instance" "vm-terraform" {
   name         = "terraform-instance"
-  machine_type = "e2-medium"
+  machine_type = var.machine_type
   zone         = var.zone
 
   boot_disk {
