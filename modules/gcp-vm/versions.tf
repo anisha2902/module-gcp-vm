@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "google" {
-  project = "centering-line-445111-e9"
-  region  = "us-east1"  
+  project = var.project
+  region  = var.region  
   zone    = var.zone
 }
